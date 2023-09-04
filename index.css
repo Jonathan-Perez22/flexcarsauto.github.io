@@ -1,0 +1,251 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: sans-serif;}
+a{text-decoration: none;}
+body{
+   background-color: rgb(150, 150, 150);
+}
+.contenedor{
+    max-width: 80vw;
+    margin: 0 auto;
+}
+/* HEADER */
+.principal{   position: sticky;top: 0;}
+header{
+   width: 100%;
+   background-color: azure;
+   z-index: 10;
+}
+header .contenedor{
+   display: flex;flex-direction: row;
+   height: 18vh;
+   justify-content: space-between;align-items: center;
+
+}
+header .contenedor .logo{
+   display: flex;flex-direction: row;
+   align-items: center;
+   gap: 15px;
+}
+header .contenedor .logo a{
+   color: black;
+   text-decoration: none;
+   font-weight: bold;
+}
+header .contenedor .logo img{
+   height: 50px;
+}
+header .contenedor .redes{
+   display: flex; gap: 20px;
+}
+header .contenedor .redes i{
+   font-size: 1.9em;
+   height: 50px;width: 50px;
+   display: grid;align-items: center;
+   border-radius: 25%;text-align: center;transition-duration: .5s;
+}
+header .contenedor .redes i:hover{
+   background-color: rgb(210, 210, 210);
+   transition-duration: .8s;
+   font-size: 2.1em;
+   height:50px;width:50px;position: relative;
+}
+
+
+
+/* SLIDER */
+
+
+
+
+.contenedor-galeria{
+   display: grid;
+   place-items: center;
+   height: 60vh;
+   
+}
+
+      .slider {
+  width: 80vw;height: 55vh;  border-radius:50px;
+   justify-content: center;display: flex;background-color: aliceblue;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform .9s ease ;
+}
+
+.slide {
+  flex: 0 0 100%;
+   }
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+
+
+/* MENU DESLEGABLE */
+
+
+
+
+nav{
+   z-index: 10;
+   position: sticky;top: 0;
+   margin: 0px;
+}
+nav a{color: azure;}
+#menu{
+   margin: 0;
+   height: 50px;
+   background-color: black;color: azure;
+   display: flex;flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   list-style: none;
+}
+#menu li{
+   display: grid;
+   
+   margin: 0;padding: 0;
+   align-items: center;
+   width: 200px;height: 50px;
+}
+#menu li a{
+   margin: 0px;
+   width: 100%;height: 100%;
+   display: grid;place-items: center;
+}
+#menu li a:hover{
+text-decoration: 2px underline orange;
+}
+#menu .menuD{
+   list-style: none;
+   display: none;position: absolute;top: 0;
+}
+#menu .menuD .autos:hover{
+ background: linear-gradient(
+   0deg,
+   rgba(0,0,0,.3),
+   rgba(0,0,0,.3)
+ ),url(images/autos/autos/joyplus.webp);
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+#menu .menuD .pick-ups:hover{
+   background: linear-gradient(
+      0deg,
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+    ),url(images/autos/pick-ups/s10\ cab2.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#menu .menuD .suvs:hover{
+   background: linear-gradient(
+      0deg,
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)
+    ),url(images/autos/suvs/traiblazer.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu .menuD li{
+   text-align: center;
+   background-color: black;color: azure;
+   width: 200px;height: 50px;
+   position: relative;margin: 0px;
+}
+#menu .se-desplega:hover .menuD{
+   display: flex;flex-direction: column;
+   /* position: absolute; */margin-top: 50px;
+}
+/* BANNER */
+.banner{
+width: 80vw;height: 20vh;
+margin: 0 auto;
+background: url(images/banner.png);
+background-position: center ;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+footer{
+   height: 50vh;width: 100%;
+   display: flex;flex-direction: row;
+
+}
+/* BARRA LATERAL */
+::-webkit-scrollbar{
+   width: 15px;
+}
+::-webkit-scrollbar-track{
+   background-color: rgb(150, 150, 150);
+}
+::-webkit-scrollbar-thumb{
+   background-color: goldenrod;
+   border-radius: 10px;
+   border: 3px solid black;
+}
+/* PLAN DE PAGOS */
+#plan-pago{
+   height: 100vh;top: 0;
+}
+#plan-pago header{
+   text-align: center; height: 10%;top: 0;margin-top: 0;
+   display: grid;align-items: center;
+}
+#plan-pago .contenedor .contenedor-de-cartas{
+   display: flex;flex-direction: row;
+   justify-content: space-evenly;align-items: center;
+   gap: 5%;
+   margin-top: 5%;
+}
+#plan-pago .contenedor .contenedor-de-cartas .cards{
+   width: 30vw;height: 50vh;
+   align-items: center;justify-content: center;
+   flex-direction: column;
+   transition-duration: 1.1s;
+   display: grid;position: relative;
+   background-color: azure;
+   padding: 2%;
+   border: 5px solid goldenrod;border-radius: 15% 0% 0% 15%;
+}
+#plan-pago .contenedor .contenedor-de-cartas .cards h4{
+   z-index: 4;
+   
+}
+#plan-pago .contenedor .contenedor-de-cartas .cards p{
+   display: none;color: aliceblue;
+}
+#plan-pago .contenedor .contenedor-de-cartas .cards a{
+   display: none;
+   border-radius: 25px;
+width: 150px;height: 40px;
+color: black;background-color: azure;
+padding: 2px;border: 4px solid goldenrod;
+align-items: center;
+text-align: center;
+}
+#plan-pago .contenedor .contenedor-de-cartas .cards:hover{
+   display: flex;flex-direction: column;
+   justify-content: space-around;align-items: center;
+   background-color: rgba(0,0,0,.3);
+   border-radius: 0% 15% 15% 0%;
+   transition-duration: 1.1s;
+}
+#plan-pago .contenedor .contenedor-de-cartas .cards:hover p{
+   display: grid; 
+}
+#plan-pago .contenedor .contenedor-de-cartas .cards:hover a{
+   display: grid;
+}
